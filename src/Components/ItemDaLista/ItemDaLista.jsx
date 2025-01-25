@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import './ItemList.css';
+import './ItemDaLista.css';
 import { Link, useParams } from 'react-router-dom';
 
-const ItemList = () => {
+const ItemDaLista = () => {
   const [products, setProducts] = useState([]);
   const { id } = useParams();
 
@@ -41,4 +41,4 @@ const ItemList = () => {
   );
 };
 
-export default ItemList;
+export default ItemDaLista;

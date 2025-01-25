@@ -1,4 +1,5 @@
-import ItemList from "../ItemList/ItemList"
+import ItemDaLista from "../ItemDaLista/ItemDaLista"
+
 
 
 const ItemListContainer = () => {
@@ -6,7 +7,7 @@ const ItemListContainer = () => {
         <section className="container">
             <h1>
                 item list container
-                <ItemList/>
+                <ItemDaLista/>
             </h1>
         </section>
     )
