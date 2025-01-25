@@ -2,7 +2,6 @@
 
 
 * {
-  
   padding: 0;
   box-sizing: border-box;
 
@@ -29,6 +28,8 @@
   padding: 0 15px;
 }
 
-h1{
-  color: #000;
+
+p{
+  font-size: 18px;
+  font-weight: lighter;
 }

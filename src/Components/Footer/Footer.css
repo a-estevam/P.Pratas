@@ -1,0 +1,26 @@
+
+footer{
+    background-color: var(--tertiaryColor);
+  }
+
+.footer-content{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 200px;
+   
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    color: var(--primaryColor);
+}
+
+.social-media-icon{
+    display: flex;
+    align-items: center;
+
+}

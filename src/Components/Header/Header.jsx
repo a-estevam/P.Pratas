@@ -7,7 +7,7 @@ import './Header.css'
 const Header = () => {
     return(
         <header className="">
-            <div className="header-Content">
+            <div className="header-Content container">
                 <Brand/>
                 <NavBar/>
                 <CartWidget/>
