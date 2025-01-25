@@ -1,6 +1,7 @@
 import Brand from "../Brand/Brand"
 import CartWidget from "../CartWidget/CartWidget"
 import NavBar from "../NavBar/NavBar"
+import SearchBar from "../SearchBar/SearchBar"
 import './Header.css'
 
 
@@ -10,6 +11,7 @@ const Header = () => {
             <div className="header-Content container">
                 <Brand/>
                 <NavBar/>
+                <SearchBar/>
                 <CartWidget/>
             </div>
         </header>

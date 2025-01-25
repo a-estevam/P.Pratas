@@ -1,30 +1,32 @@
 P.Pratas
 ## ⚡ Sobre o Projeto
-P.Pratas é um e-commerce especializado na venda de joias e acessórios em prata 925. A plataforma oferece uma experiência de compra simples e segura, permitindo que os clientes adquiram produtos exclusivos de alta qualidade.
+P.Pratas é um e-commerce de pratas desenvolvido para o curso de React da Coderhouse.
 
 ## 📋 Descrição
 P.Pratas foi desenvolvido com React.js para fornecer aos usuários uma maneira fácil e segura de comprar pratas 925 online. A plataforma inclui funcionalidades como visualização detalhada dos produtos, filtros de pesquisa e a possibilidade de adicionar itens ao carrinho para uma experiência de compra eficiente.
 
 ## 🛠️ Tecnologias Utilizadas
 
-React.js
-HTML5
-CSS3
-[Outras bibliotecas ou frameworks, se houver]
+- React.js
+- HTML
+- CSS
+
 ## 📋 Como Usar
 
-Acesse o site aqui.
-Navegue pelos diferentes produtos disponíveis.
-Selecione os itens de seu interesse e adicione-os ao carrinho.
-Finalize a compra fornecendo os dados de envio e pagamento.
-[Qualquer outra instrução, como funcionalidades de cadastro de usuário ou rastreamento de pedidos].
+1. Acesse [o site aqui](https://p-pratas.vercel.app/).
+2. Navegue pelos diferentes produtos disponíveis.
+3. Selecione os itens de seu interesse e adicione-os ao carrinho.
+4. Finalize a compra fornecendo os dados de envio e pagamento.
+
+
 ## 🖼️ Screenshots
-[Adicione capturas de tela do seu projeto aqui.]
+![Imagem do simulador](https://github.com/a-estevam/P.Pratas/blob/main/public/mkp_laptop_github.png)
 
 ## 🎯 Melhorias Futuras
 
 Implementação de sistema de avaliações de produtos.
 Adição de mais filtros de busca (por preço, categoria, etc.).
 Integração com plataformas de pagamento para mais opções.
+
 ## 📞 Contato
-Você pode me encontrar no LinkedIn: Antonio Estevam ou entrar em contato pelo e-mail: [seu-email].
+[![LinkedIn]](https://www.linkedin.com/in/antonioestevam/)
