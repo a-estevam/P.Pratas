@@ -33,8 +33,10 @@
     align-items: center;
 }
 
-.itemt_img{
-    content: url();
+#itemt_img {
+    width: 120px;
+    height: 116px;
+    object-fit: cover;
 }
 
 .item_stock{
@@ -52,6 +54,13 @@
 
     cursor: pointer;
 }
+
+
+
+.item_btn:hover{
+    background-color: var(--tertiaryColor);
+}
+
 
 .Brincos{
     background-color: var(--destaqueCollor);

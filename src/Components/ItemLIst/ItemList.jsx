@@ -29,7 +29,7 @@ const ItemList = () => {
       {products.map((product) => (
         <div className="item_container" key={product.id}>
           <p className={`item_category ${product.category}`}>{product.category}</p>
-          <img className="item_img" src={product.photoId} alt={product.product} />
+          <img  id='item_img' src={product.photoId} alt={product.product} />
           <p className="item_stock">Em estoque: {product.stock} peças</p>
 
           <Link to={`/produto/${product.id}`}>

@@ -6,7 +6,7 @@ import './Brand.css'
 const Brand = () => {
     return(
         <div className="brand">
-            <Link>
+            <Link to={'/'}>
              <img src={logo} alt="logo" srcset="" />
             </Link>
         </div>
