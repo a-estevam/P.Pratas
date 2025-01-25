@@ -1,0 +1,24 @@
+@import '../../index.css';
+
+.cart{
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart_iten{
+    font-family: inter;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    width: 44px;
+    height: 32px;
+    margin-left: 5px;
+    border-radius: 1000px;
+
+}

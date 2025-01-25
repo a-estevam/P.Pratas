@@ -1,0 +1,16 @@
+@import '../../index.css';
+
+.header-Content{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 15px;
+
+
+    height: 70px;
+    
+    border: 0.3px solid var(--blackColor);
+    border-radius: 8px;
+
+}

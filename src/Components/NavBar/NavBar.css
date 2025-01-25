@@ -1,0 +1,25 @@
+
+
+
+.navBar_li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 600px;
+}
+
+.List{
+    display: none;
+}
+
+
+@media screen and (max-width: 950px) {
+  .navBar{
+    display: none;
+  }
+  .List{
+    display: block;
+  }
+}

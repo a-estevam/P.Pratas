@@ -1,0 +1,12 @@
+@import '../../index.css';
+
+a{
+    font-family: inter;
+    text-decoration: none;
+    color: var(--blackColor);
+    text-transform: uppercase;
+}
+
+li{
+    list-style: none;
+}
