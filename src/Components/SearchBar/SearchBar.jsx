@@ -1,6 +1,6 @@
 
 import { MagnifyingGlass } from "@phosphor-icons/react";
-import "./searchBar.css"
+import "./SearchBar.css"
 
 
 const SearchBar = () => {
