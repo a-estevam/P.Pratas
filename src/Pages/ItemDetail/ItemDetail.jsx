@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import "./Produto.css";
+import "./ItemDetail.css";
 import { use } from "react";
 
-const Produto = () => {
+const ItemDetail = () => {
 
   const [amount, setAmount] = useState(0)  
 
@@ -93,4 +93,4 @@ const decrement = () =>{
   );
 };
 
-export default Produto;
+export default ItemDetail;

@@ -32,7 +32,7 @@ const ItemDaLista = () => {
           <img  id='item_img' src={product.photoId} alt={product.product} />
           <p className="item_stock">Em estoque: {product.stock} peças</p>
 
-          <Link to={`/produto/${product.id}`}>
+          <Link to={`/ItemDetail/${product.id}`}>
             <button className="item_btn">Saiba Mais</button>
           </Link>
         </div>
