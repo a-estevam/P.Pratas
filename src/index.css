@@ -7,6 +7,8 @@
 
   font-family: "Inter", serif;
   font-optical-sizing: auto;
+
+  overflow: scroll;
 }
 
 :root{
@@ -32,4 +34,10 @@
 p{
   font-size: 18px;
   font-weight: lighter;
+}
+
+@media screen and (max-width: 450px) {
+  .container{
+    max-width: 450px;
+  }
 }

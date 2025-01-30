@@ -15,8 +15,8 @@
 }
 
 
-@media screen and (max-width: 950px) {
-  .navBar{
+@media screen and (max-width: 450px) {
+  .navBar_li{
     display: none;
   }
   .List{

@@ -33,9 +33,9 @@
     align-items: center;
 }
 
-#itemt_img {
-    width: 120px;
-    height: 116px;
+#item_img {
+    width: 160px;
+    height: 136px;
     object-fit: cover;
 }
 
@@ -71,10 +71,29 @@
 }
 
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 450px) {
    
-    .list{
-        flex-direction: column;
-        align-items: center;
+   
+
+    .item{
+        gap: 5px
+        /* flex-direction: column; */
+    }
+
+    .item_container{
+        width: 200px;
+        height: 200px;
+
+    }
+
+    #item_img {
+        width: 80px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .item_btn{
+        width: 130px;
+        height: 40px;
     }
   }

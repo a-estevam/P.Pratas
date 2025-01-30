@@ -12,7 +12,7 @@ const Home = () =>{
             <BannerHero/>
             <br />
             <hr  className='container'/>
-            <ItemListContainer/>
+            <ItemListContainer className='itemList_container'/>
         </>
     )
 }

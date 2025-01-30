@@ -7,8 +7,8 @@ const ItemListContainer = () => {
         <section className="container">
             <h1>
                 item list container
-                <ItemDaLista/>
             </h1>
+                <ItemDaLista/>
         </section>
     )
 }

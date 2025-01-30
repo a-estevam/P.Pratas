@@ -114,10 +114,22 @@ span {
 
 
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 450px) {
 
     .bannerHero{
-        height: 500px;
+        display: flex;
+        flex-direction: column; 
+        height: auto; 
     }
-    
+
+    .promo1,
+    .promo2,
+    .promo3,
+    .promo4{
+        background-color: red;
+
+    }
+    .btn_promo{
+        width: 80%;
+    }
   }
