@@ -1,16 +1,31 @@
 import { useState } from "react";
-import ItemDaLista from "../Components/ItemDaLista/ItemDaLista";
+import CartContext from "./CartContext"
 
+export const CartProvider = ({children}) => {
 
-const CartProvider = ({children}) =>{
     const [cart, setCart] = useState([])
+
+    const addToCart = (product, quantity) => {
+        setCart((prevCart) => [
+          ...prevCart,
+          { ...product, quantity },
+        ]);
+
+    //pegar o ID
+    //pegar o produto
+    //pegar a quantidade
+    //pegar o valor
+    
+
+    }
+  
+
     return(
-        <>
-            <CartContext.Provider value={[]}>
-                <ItemDaLista/>
-            </CartContext.Provider>
-        </>
+        <CartContext.Provider>
+            {children}
+        </CartContext.Provider>
+
     )
 }
 
-export default CartProvider
+export const useCart = () => useContext(CartContext);

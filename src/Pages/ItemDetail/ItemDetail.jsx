@@ -1,11 +1,18 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
 import "./ItemDetail.css";
-import { use } from "react";
+
+
+
+
 
 const ItemDetail = () => {
 
-  const [amount, setAmount] = useState(0)  
+  
+  const [amount, setAmount] = useState(0) 
+  
+  
+  
 
   const increment = () =>{
     if(amount >= product.stock){
@@ -13,20 +20,14 @@ const ItemDetail = () => {
        
     } else{
          setAmount(amount +1)
-         if (btnRef.current) {
-            btnRef.current.disabled = false;
-            btnRef.current.style.backgroundColor = '#335231';
-            btnRef.current.style.cursor = 'pointer';
-        }
+         
     }
 }
 
 const decrement = () =>{
     if(amount == 0){
         if (btnRef.current) {
-            btnRef.current.style.backgroundColor = 'gray';
-            btnRef.current.style.cursor = 'not-allowed';
-            btnRef.current.disabled = true;
+            
         }
        
     } else{
@@ -56,6 +57,23 @@ const decrement = () =>{
     fetchProduct();
   }, [id]);
 
+// ************************
+
+const handleBuy = () => {
+  if (amount > 0) {
+    addToCart(product, amount); 
+    alert(`${amount} unidade(s) de ${product.products} foram adicionadas ao carrinho.`);
+  } else {
+    alert("Escolha uma quantidade para comprar.");
+  }
+};
+
+
+//************************** 
+
+
+
+
   if (!product) {
     return <div>Carregando...</div>;
   }
@@ -79,11 +97,11 @@ const decrement = () =>{
           
           <div className="buttons">
           <div className="quantidade counter_itens">
-            <button id="minus" className="card_button" onClick={decrement}>-</button>
+            <button className="card_button" onClick={decrement}>-</button>
             <span id="value">{amount}</span>
-            <button id="plus" className="card_button" onClick={increment}>+</button>
+            <button className="card_button" onClick={increment}>+</button>
           </div>
-          <button className="product_btn">comprar</button>
+          <button className="product_btn" onClick={handleBuy}>comprar</button>
           </div>
 
         </div>

@@ -4,15 +4,20 @@ import Header from './Components/Header/Header'
 import RoutesComponents from './Routes/RoutesComponents'
 import Footer from './Components/Footer/Footer'
 
+
 function App() {
   
 
   return (
-    <BrowserRouter>
-      <Header/>
-      <RoutesComponents/>
-      <Footer/>
-    </BrowserRouter>
+  
+      
+        <BrowserRouter>
+        <Header/>
+        <RoutesComponents/>
+        <Footer/>
+        </BrowserRouter>
+      
+   
   )
 }
 

@@ -1,3 +1,4 @@
-import {useContext } from "react"
 
-const CartContext = React.createContext([])
+const CartContext = React.createContext({})
+
+export default CartContext
