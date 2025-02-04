@@ -99,3 +99,32 @@
     cursor: pointer;
     font-size: 16px;
 }
+
+
+@media screen and (max-width: 450px){
+
+    .product-content{
+        
+        flex-direction: column;
+    }
+
+    .product-description{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        justify-content: space-around;
+        
+        
+    
+    }
+
+    .product-img{
+        width: 400px;
+        height: 350px;
+        padding: 5px;
+        border-radius: 8px;
+        background-color: var(--bgLightGrayColor);
+    }
+
+   
+}
