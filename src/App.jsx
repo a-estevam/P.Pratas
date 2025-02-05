@@ -3,7 +3,8 @@ import './App.css'
 import Header from './Components/Header/Header'
 import RoutesComponents from './Routes/RoutesComponents'
 import Footer from './Components/Footer/Footer'
-import CartProvider  from './context/CartProvider'
+import { CartProvider } from './context/CartProvider.jsx'
+
 // import { collection, doc, getDoc, getDocs, getFirestore } from 'firebase/firestore'
 // import { useEffect, useState } from 'react'
 
@@ -30,7 +31,7 @@ function App() {
 
   return (
     
-    <CartProvider>
+    <CartProviderovider>
       <BrowserRouter>
         <Header/>
         <RoutesComponents/>
