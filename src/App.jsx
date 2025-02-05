@@ -31,7 +31,7 @@ function App() {
 
   return (
     
-    <CartProviderovider>
+    <CartProvider>
       <BrowserRouter>
         <Header/>
         <RoutesComponents/>
