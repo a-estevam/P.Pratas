@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { ShoppingCart } from "@phosphor-icons/react";
 import "./CartWidget.css";
-import CartContext from "../../context/CartContext";
+import CartContext from "../../Context/CartContext.jsx";
 
 
 const CartWidget = () => {
