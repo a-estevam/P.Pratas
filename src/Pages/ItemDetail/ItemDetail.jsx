@@ -43,7 +43,9 @@ const ItemDetail = () => {
   const handleBuy = () => {
     if (product) {
       addToCart(product, localAmount);
-      alert(`${localAmount} unidade(s) de ${product.products} foram adicionadas ao carrinho.`);
+      alert(
+        `${localAmount} unidade(s) de ${product.products} foram adicionadas ao carrinho.`
+      );
     }
   };
 
