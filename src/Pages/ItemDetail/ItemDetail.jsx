@@ -42,10 +42,16 @@ const ItemDetail = () => {
 
   const handleBuy = () => {
     if (product) {
-      addToCart(product, localAmount);
-      alert(
-        `${localAmount} unidade(s) de ${product.products} foram adicionadas ao carrinho.`
-      );
+      const itemToCart = {
+        id: product.id,
+        name: product.products,
+        price: parseFloat(product.price),
+        image: product.photoId || "https://via.placeholder.com/150",
+        quantity: localAmount || 1,
+      };
+
+      addToCart(itemToCart);
+      alert(`${localAmount} unidade(s) de ${product.products} foram adicionadas ao carrinho.`);
     }
   };
 

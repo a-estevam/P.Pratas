@@ -1,6 +1,6 @@
 
-.itemList_container{
-    display: flex;
+.itemList{
+    display: flex ;
     flex-direction: column;
     overflow: hidden;
 }

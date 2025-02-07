@@ -4,7 +4,7 @@ import ItemDaLista from "../ItemDaLista/ItemDaLista"
 
 const ItemListContainer = () => {
     return(
-        <section className="container">
+        <section className="itemList container">
             <h1>
                 item list container
             </h1>

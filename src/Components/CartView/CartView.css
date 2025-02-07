@@ -1,0 +1,42 @@
+@import '../../index.css';
+
+
+
+.cartView_item{
+    display: flex;
+    background-color: var(--bgLightGrayColor);
+    gap: 5px;
+}
+
+.cartView_content{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+.cartView_controls button{
+    border-radius: 8px;
+    border: none;
+    background-color: var(--primaryColor);
+    width: 53px;
+    height: 35px;
+    color: var(--whiteColor);
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.cartView_checkout{
+    border-radius: 8px;
+    border: none;
+    background-color: var(--primaryColor);
+    width: 213px;
+    height: 55px;
+    color: var(--whiteColor);
+    cursor: pointer;
+    font-size: 16px;
+
+}
