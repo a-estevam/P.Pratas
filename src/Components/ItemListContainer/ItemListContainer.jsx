@@ -6,7 +6,7 @@ const ItemListContainer = () => {
     return(
         <section className="itemList container">
             <h1>
-                item list container
+                Produtos
             </h1>
                 <ItemDaLista/>
         </section>

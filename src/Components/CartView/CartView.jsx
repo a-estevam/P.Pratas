@@ -6,7 +6,7 @@ import "./CartView.css";
 const CartView = () => {
   const { cart, increment, decrement } = useContext(CartContext);
 
-  // Cálculo do total considerando preço e quantidade
+ 
   const totalPrice = cart.reduce(
     (total, item) =>
       total + (parseFloat(item.price) || 0) * (item.quantity || 1), 

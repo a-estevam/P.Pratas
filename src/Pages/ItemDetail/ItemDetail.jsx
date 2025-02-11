@@ -2,6 +2,7 @@ import { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
 import "./ItemDetail.css";
 import CartContext from "../../Context/CartContext";
+import data from "../../data.json";
 
 const ItemDetail = () => {
   const { id } = useParams();
@@ -10,20 +11,8 @@ const ItemDetail = () => {
   const { addToCart } = useContext(CartContext);
 
   useEffect(() => {
-    const fetchProduct = async () => {
-      const url = `https://api.sheety.co/1ecd5578eb3668a6655d7078aa050b72/apiPPratas/products/${id}`;
-      try {
-        const response = await fetch(url);
-        if (response.ok) {
-          const data = await response.json();
-          setProduct(data.product);
-        }
-      } catch (error) {
-        console.error("Erro ao buscar o produto:", error);
-      }
-    };
-
-    fetchProduct();
+    const selectedProduct = data.find((item) => item.id === id);
+    setProduct(selectedProduct);
   }, [id]);
 
   const handleIncrement = () => {
