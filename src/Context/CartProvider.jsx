@@ -9,7 +9,7 @@ export const CartProvider = ({ children }) => {
       const existingProductIndex = prevCart.findIndex(
         (item) => item.id === product.id
       );
-  
+
       if (existingProductIndex >= 0) {
         const updatedCart = [...prevCart];
         updatedCart[existingProductIndex].quantity += quantity;
@@ -19,14 +19,13 @@ export const CartProvider = ({ children }) => {
           ...prevCart,
           {
             ...product,
-            quantity: quantity || 1,  
+            quantity: quantity || 1,
             image: product.photoId,
           },
         ];
       }
     });
   };
-  
 
   const increment = (product) => {
     setCart((prevCart) => {

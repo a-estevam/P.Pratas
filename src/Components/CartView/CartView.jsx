@@ -26,8 +26,8 @@ const CartView = () => {
             {cart.map((item) => (
               <li key={item.id} className="cartView_item">
                 <img
-                  src={item.photoId || item.image || "https://via.placeholder.com/150"}
-                  alt={item.name || "Produto"}
+                  src={item.photoId}
+                  alt={item.name}
                   className="cartView_image"
                 />
                 <div className="cartView_content">
