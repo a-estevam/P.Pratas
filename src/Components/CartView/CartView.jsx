@@ -6,10 +6,8 @@ import "./CartView.css";
 const CartView = () => {
   const { cart, increment, decrement } = useContext(CartContext);
 
- 
   const totalPrice = cart.reduce(
-    (total, item) =>
-      total + (parseFloat(item.price) || 0) * (item.quantity || 1), 
+    (total, item) => total + (parseFloat(item.price) || 0) * (item.quantity || 1),
     0
   );
 
@@ -28,7 +26,7 @@ const CartView = () => {
             {cart.map((item) => (
               <li key={item.id} className="cartView_item">
                 <img
-                  src={item.image || "https://via.placeholder.com/150"}
+                  src={item.photoId || item.image || "https://via.placeholder.com/150"}
                   alt={item.name || "Produto"}
                   className="cartView_image"
                 />
