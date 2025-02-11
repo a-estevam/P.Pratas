@@ -25,11 +25,7 @@ const CartView = () => {
           <ul>
             {cart.map((item) => (
               <li key={item.id} className="cartView_item">
-                <img
-                  src={item.photoId}
-                  alt={item.name}
-                  className="cartView_image"
-                />
+                <img src={item.photoId} alt={item.products} />
                 <div className="cartView_content">
                   <h3>{item.name || "Nome não disponível"}</h3>
                   <p>

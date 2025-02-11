@@ -20,7 +20,6 @@ export const CartProvider = ({ children }) => {
           {
             ...product,
             quantity: quantity || 1,
-            image: product.photoId,
           },
         ];
       }
