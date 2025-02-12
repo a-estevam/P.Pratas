@@ -12,9 +12,13 @@
     width: 80%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-a;
     
 
+}
+
+.cartView_controls{
+    display: flex;
 }
 
 .cartView_controls button{
@@ -39,4 +43,24 @@
     cursor: pointer;
     font-size: 16px;
 
+}
+
+.cartView_img{
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    background-color: var(--bgLightGrayColor);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden !important;
+    object-fit: contain;
+}
+
+.cartView_div{
+    
+    width: 30%;
+    ;
+    
 }

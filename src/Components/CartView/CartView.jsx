@@ -25,13 +25,20 @@ const CartView = () => {
           <ul>
             {cart.map((item) => (
               <li key={item.id} className="cartView_item">
-                <img src={item.photoId} alt={item.products} />
+                <img className="cartView_img" src={item.photoId} alt={item.products} />
                 <div className="cartView_content">
-                  <h3>{item.name || "Nome não disponível"}</h3>
-                  <p>
-                    Preço: R$ {parseFloat(item.price).toFixed(2) || "0.00"}
-                  </p>
-                  <p>Quantidade: {item.quantity || 1}</p>
+                  <div className="cartView_div">
+                    <h3>{item.name || "Nome não disponível"}</h3>
+                  </div>
+                  <div className="cartView_div">
+                    <h4>
+                      Preço: R$ {parseFloat(item.price).toFixed(2) || "0.00"}
+                    </h4>
+                  </div>
+
+                  <div className="cartView_div"><h4>Quantidade: {item.quantity || 1}</h4></div>
+                  
+                  
                   <div className="cartView_controls">
                     <button onClick={() => decrement(item)}>-</button>
                     <button onClick={() => increment(item)}>+</button>

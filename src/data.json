@@ -1,91 +1,19 @@
 [
   {
     "Carimbo de data/hora": "25/01/2025 18:17:27",
-    "id": "3753",
+    "id": "8472",
     "products": "Anél Prata 925",
     "price": "122",
     "promotion": "FALSE",
     "category": "Aneis",
     "photo": "https://drive.google.com/open?id=130c3z2MQcWLOHxzSoHLyFEWHf0z4JxnA",
     "photoId": "https://drive.google.com/thumbnail?sz=w300&id=130c3z2MQcWLOHxzSoHLyFEWHf0z4JxnA",
-    "stock": "20",
-    "description": "Anel de prata 925 com design elegante e sofisticado. Acabamento polido que destaca o brilho natural da prata, combinando estilo e versatilidade. Perfeito para complementar qualquer look, desde ocasiões casuais até momentos especiais. Uma joia durável, refinada e ideal para presentear ou usar no dia a dia."
-  },
-  {
-    "Carimbo de data/hora": "25/01/2025 18:18:30",
-    "id": "5994",
-    "products": "Brinco Prata 925",
-    "price": "143",
-    "promotion": "FALSE",
-    "category": "Brincos",
-    "photo": "https://drive.google.com/open?id=1pN72kBhM5npowTOmRHBAGhpZaMgUtnIu",
-    "photoId": "https://drive.google.com/thumbnail?sz=w300&id=1pN72kBhM5npowTOmRHBAGhpZaMgUtnIu",
-    "stock": "12",
-    "description": "Brinco de prata 925 com design elegante e atemporal. Seu acabamento polido realça o brilho natural da prata, oferecendo sofisticação e estilo. Ideal para diversas ocasiões, desde o dia a dia até eventos especiais, esse brinco é uma escolha versátil e refinada, perfeita para quem busca um toque de classe em qualquer look."
-  },
-  {
-    "Carimbo de data/hora": "25/01/2025 18:23:40",
-    "id": "3924",
-    "products": "Anél Cravejado Prata 925",
-    "price": "180",
-    "promotion": "FALSE",
-    "category": "Aneis",
-    "photo": "https://drive.google.com/open?id=1btN2BIgX_1WQ_xPZ2tLLFTF54zfcD9a0",
-    "photoId": "https://drive.google.com/thumbnail?sz=w300&id=1btN2BIgX_1WQ_xPZ2tLLFTF54zfcD9a0",
     "stock": "10",
-    "description": "Anel de prata 925 cravejado com pedras brilhantes, que adicionam um toque de sofisticação e glamour. Seu design elegante combina o brilho da prata com a luminosidade das pedras, criando uma peça versátil e sofisticada. Ideal para complementar looks casuais ou de ocasiões especiais, é uma joia atemporal e cheia de estilo."
-  },
-  {
-    "Carimbo de data/hora": "25/01/2025 18:17:27",
-    "id": "3753",
-    "products": "Anél Prata 925",
-    "price": "122",
-    "promotion": "FALSE",
-    "category": "Aneis",
-    "photo": "https://drive.google.com/open?id=130c3z2MQcWLOHxzSoHLyFEWHf0z4JxnA",
-    "photoId": "https://drive.google.com/thumbnail?sz=w300&id=130c3z2MQcWLOHxzSoHLyFEWHf0z4JxnA",
-    "stock": "5",
-    "description": "Anel de prata 925 com design elegante e sofisticado. Acabamento polido que destaca o brilho natural da prata, combinando estilo e versatilidade. Perfeito para complementar qualquer look, desde ocasiões casuais até momentos especiais. Uma joia durável, refinada e ideal para presentear ou usar no dia a dia."
+    "description": "Anel de prata 925 com design elegante e sofisticado."
   },
   {
     "Carimbo de data/hora": "25/01/2025 18:18:30",
-    "id": "5994",
-    "products": "Brinco Prata 925",
-    "price": "143",
-    "promotion": "FALSE",
-    "category": "Brincos",
-    "photo": "https://drive.google.com/open?id=1pN72kBhM5npowTOmRHBAGhpZaMgUtnIu",
-    "photoId": "https://drive.google.com/thumbnail?sz=w300&id=1pN72kBhM5npowTOmRHBAGhpZaMgUtnIu",
-    "stock": "45",
-    "description": "Brinco de prata 925 com design elegante e atemporal. Seu acabamento polido realça o brilho natural da prata, oferecendo sofisticação e estilo. Ideal para diversas ocasiões, desde o dia a dia até eventos especiais, esse brinco é uma escolha versátil e refinada, perfeita para quem busca um toque de classe em qualquer look."
-  },
-  {
-    "Carimbo de data/hora": "25/01/2025 18:23:40",
-    "id": "3924",
-    "products": "Anél Cravejado Prata 925",
-    "price": "180",
-    "promotion": "FALSE",
-    "category": "Aneis",
-    "photo": "https://drive.google.com/open?id=1btN2BIgX_1WQ_xPZ2tLLFTF54zfcD9a0",
-    "photoId": "https://drive.google.com/thumbnail?sz=w300&id=1btN2BIgX_1WQ_xPZ2tLLFTF54zfcD9a0",
-    "stock": "10",
-    "description": "Anel de prata 925 cravejado com pedras brilhantes, que adicionam um toque de sofisticação e glamour. Seu design elegante combina o brilho da prata com a luminosidade das pedras, criando uma peça versátil e sofisticada. Ideal para complementar looks casuais ou de ocasiões especiais, é uma joia atemporal e cheia de estilo."
-  },
-  {
-    "Carimbo de data/hora": "25/01/2025 18:17:27",
-    "id": "3753",
-    "products": "Anél Prata 925",
-    "price": "122",
-    "promotion": "FALSE",
-    "category": "Aneis",
-    "photo": "https://drive.google.com/open?id=130c3z2MQcWLOHxzSoHLyFEWHf0z4JxnA",
-    "photoId": "https://drive.google.com/thumbnail?sz=w300&id=130c3z2MQcWLOHxzSoHLyFEWHf0z4JxnA",
-    "stock": "8",
-    "description": "Anel de prata 925 com design elegante e sofisticado. Acabamento polido que destaca o brilho natural da prata, combinando estilo e versatilidade. Perfeito para complementar qualquer look, desde ocasiões casuais até momentos especiais. Uma joia durável, refinada e ideal para presentear ou usar no dia a dia."
-  },
-  {
-    "Carimbo de data/hora": "25/01/2025 18:18:30",
-    "id": "5994",
+    "id": "2910",
     "products": "Brinco Prata 925",
     "price": "143",
     "promotion": "FALSE",
@@ -93,11 +21,83 @@
     "photo": "https://drive.google.com/open?id=1pN72kBhM5npowTOmRHBAGhpZaMgUtnIu",
     "photoId": "https://drive.google.com/thumbnail?sz=w300&id=1pN72kBhM5npowTOmRHBAGhpZaMgUtnIu",
     "stock": "11",
-    "description": "Brinco de prata 925 com design elegante e atemporal. Seu acabamento polido realça o brilho natural da prata, oferecendo sofisticação e estilo. Ideal para diversas ocasiões, desde o dia a dia até eventos especiais, esse brinco é uma escolha versátil e refinada, perfeita para quem busca um toque de classe em qualquer look."
+    "description": "Brinco de prata 925 com design elegante e atemporal."
   },
   {
     "Carimbo de data/hora": "25/01/2025 18:23:40",
-    "id": "3924",
+    "id": "5638",
+    "products": "Anél Cravejado Prata 925",
+    "price": "180",
+    "promotion": "FALSE",
+    "category": "Aneis",
+    "photo": "https://drive.google.com/open?id=1btN2BIgX_1WQ_xPZ2tLLFTF54zfcD9a0",
+    "photoId": "https://drive.google.com/thumbnail?sz=w300&id=1btN2BIgX_1WQ_xPZ2tLLFTF54zfcD9a0",
+    "stock": "12",
+    "description": "Anel de prata 925 cravejado com pedras brilhantes."
+  },
+  {
+    "Carimbo de data/hora": "25/01/2025 18:17:27",
+    "id": "6741",
+    "products": "Anél Prata 925",
+    "price": "122",
+    "promotion": "FALSE",
+    "category": "Aneis",
+    "photo": "https://drive.google.com/open?id=130c3z2MQcWLOHxzSoHLyFEWHf0z4JxnA",
+    "photoId": "https://drive.google.com/thumbnail?sz=w300&id=130c3z2MQcWLOHxzSoHLyFEWHf0z4JxnA",
+    "stock": "13",
+    "description": "Anel de prata 925 com design elegante e sofisticado."
+  },
+  {
+    "Carimbo de data/hora": "25/01/2025 18:18:30",
+    "id": "9532",
+    "products": "Brinco Prata 925",
+    "price": "143",
+    "promotion": "FALSE",
+    "category": "Brincos",
+    "photo": "https://drive.google.com/open?id=1pN72kBhM5npowTOmRHBAGhpZaMgUtnIu",
+    "photoId": "https://drive.google.com/thumbnail?sz=w300&id=1pN72kBhM5npowTOmRHBAGhpZaMgUtnIu",
+    "stock": "45",
+    "description": "Brinco de prata 925 com design elegante e atemporal."
+  },
+  {
+    "Carimbo de data/hora": "25/01/2025 18:23:40",
+    "id": "3765",
+    "products": "Anél Cravejado Prata 925",
+    "price": "180",
+    "promotion": "FALSE",
+    "category": "Aneis",
+    "photo": "https://drive.google.com/open?id=1btN2BIgX_1WQ_xPZ2tLLFTF54zfcD9a0",
+    "photoId": "https://drive.google.com/thumbnail?sz=w300&id=1btN2BIgX_1WQ_xPZ2tLLFTF54zfcD9a0",
+    "stock": "10",
+    "description": "Anel de prata 925 cravejado com pedras brilhantes."
+  },
+  {
+    "Carimbo de data/hora": "25/01/2025 18:17:27",
+    "id": "8204",
+    "products": "Anél Prata 925",
+    "price": "122",
+    "promotion": "FALSE",
+    "category": "Aneis",
+    "photo": "https://drive.google.com/open?id=130c3z2MQcWLOHxzSoHLyFEWHf0z4JxnA",
+    "photoId": "https://drive.google.com/thumbnail?sz=w300&id=130c3z2MQcWLOHxzSoHLyFEWHf0z4JxnA",
+    "stock": "8",
+    "description": "Anel de prata 925 com design elegante e sofisticado."
+  },
+  {
+    "Carimbo de data/hora": "25/01/2025 18:18:30",
+    "id": "4097",
+    "products": "Brinco Prata 925",
+    "price": "143",
+    "promotion": "FALSE",
+    "category": "Brincos",
+    "photo": "https://drive.google.com/open?id=1pN72kBhM5npowTOmRHBAGhpZaMgUtnIu",
+    "photoId": "https://drive.google.com/thumbnail?sz=w300&id=1pN72kBhM5npowTOmRHBAGhpZaMgUtnIu",
+    "stock": "11",
+    "description": "Brinco de prata 925 com design elegante e atemporal."
+  },
+  {
+    "Carimbo de data/hora": "25/01/2025 18:23:40",
+    "id": "7326",
     "products": "Anél Cravejado Prata 925",
     "price": "180",
     "promotion": "FALSE",
@@ -105,18 +105,19 @@
     "photo": "https://drive.google.com/open?id=1btN2BIgX_1WQ_xPZ2tLLFTF54zfcD9a0",
     "photoId": "https://drive.google.com/thumbnail?sz=w300&id=1btN2BIgX_1WQ_xPZ2tLLFTF54zfcD9a0",
     "stock": "25",
-    "description": "Anel de prata 925 cravejado com pedras brilhantes, que adicionam um toque de sofisticação e glamour. Seu design elegante combina o brilho da prata com a luminosidade das pedras, criando uma peça versátil e sofisticada. Ideal para complementar looks casuais ou de ocasiões especiais, é uma joia atemporal e cheia de estilo."
+    "description": "Anel de prata 925 cravejado com pedras brilhantes."
   },
+  
   {
     "Carimbo de data/hora": "25/01/2025 18:23:40",
-    "id": "3924",
+    "id": "7926",
     "products": "Anél Cravejado Prata 925",
     "price": "180",
     "promotion": "FALSE",
     "category": "Aneis",
     "photo": "https://drive.google.com/open?id=1btN2BIgX_1WQ_xPZ2tLLFTF54zfcD9a0",
     "photoId": "https://drive.google.com/thumbnail?sz=w300&id=1btN2BIgX_1WQ_xPZ2tLLFTF54zfcD9a0",
-    "stock": "25",
-    "description": "Anel de prata 925 cravejado com pedras brilhantes, que adicionam um toque de sofisticação e glamour. Seu design elegante combina o brilho da prata com a luminosidade das pedras, criando uma peça versátil e sofisticada. Ideal para complementar looks casuais ou de ocasiões especiais, é uma joia atemporal e cheia de estilo."
+    "stock": "5",
+    "description": "Anel de prata 925 cravejado com pedras brilhantes."
   }
 ]
