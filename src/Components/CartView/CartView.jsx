@@ -25,10 +25,10 @@ const CartView = () => {
           <ul>
             {cart.map((item) => (
               <li key={item.id} className="cartView_item">
-                <img className="cartView_img" src={item.photoId} alt={item.products} />
+                <img className="cartView_img" src={item.imageId} alt={item.title} />
                 <div className="cartView_content">
                   <div className="cartView_div">
-                    <h3>{item.name || "Nome não disponível"}</h3>
+                    <h3>{item.title || "Nome não disponível"}</h3>
                   </div>
                   <div className="cartView_div">
                     <h4>

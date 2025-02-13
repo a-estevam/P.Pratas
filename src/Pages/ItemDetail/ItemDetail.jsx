@@ -2,24 +2,30 @@ import { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
 import "./ItemDetail.css";
 import CartContext from "../../Context/CartContext";
-import data from "../../data.json";
+import { doc, getDoc, getFirestore } from "firebase/firestore";
 
 const ItemDetail = () => {
-  const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [localAmount, setLocalAmount] = useState(1);
   const { addToCart } = useContext(CartContext);
 
   useEffect(() => {
-    const selectedProduct = data.find((item) => item.id === id);
-    setProduct(selectedProduct);
-  }, [id]);
+    const db = getFirestore();
+    const productRef = doc(db, "Items", "uyXLON8VSjmxLCopp7PC");  // Usando a sua id fornecida
+    getDoc(productRef).then((snapshot) => {
+      if (snapshot.exists()) {
+        setProduct({ id: snapshot.id, ...snapshot.data() });
+      } else {
+        console.warn("Produto não encontrado!");
+      }
+    });
+  }, []);
 
   const handleIncrement = () => {
-    if (localAmount < product.stock) {
+    if (product && localAmount < product.stock) {
       setLocalAmount(localAmount + 1);
     } else {
-      alert(`A quantidade máxima em estoque é ${product.stock}.`);
+      alert(`A quantidade máxima em estoque é ${product?.stock}.`);
     }
   };
 
@@ -57,8 +63,8 @@ const ItemDetail = () => {
           alt={product.products}
         />
         <div className="product-description">
-          <h3>Categoria: {product.category}</h3>
-          <h1>{product.products}</h1>
+          <h3>Categoria: {product.categoryId}</h3>
+          <h1>{product.title}</h1>
           <p>{product.description}</p>
           <span>
             {new Intl.NumberFormat("pt-BR", {
