@@ -13,7 +13,7 @@ const ItemDaLista = () => {
     getDoc(itemsRef).then((snapshot) => {
       if (snapshot.exists()) {
         const productData = { id: snapshot.id, ...snapshot.data() };
-        setProducts([productData]); // Coloca o produto em um array
+        setProducts([productData]); 
       }
     });
   }, []);

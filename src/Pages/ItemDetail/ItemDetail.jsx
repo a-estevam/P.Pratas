@@ -11,7 +11,7 @@ const ItemDetail = () => {
 
   useEffect(() => {
     const db = getFirestore();
-    const productRef = doc(db, "Items", "uyXLON8VSjmxLCopp7PC");  // Usando a sua id fornecida
+    const productRef = doc(db, "Items", "uyXLON8VSjmxLCopp7PC");  
     getDoc(productRef).then((snapshot) => {
       if (snapshot.exists()) {
         setProduct({ id: snapshot.id, ...snapshot.data() });
