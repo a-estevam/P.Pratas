@@ -11,12 +11,10 @@ const ItemDetail = () => {
 
   useEffect(() => {
     const db = getFirestore();
-    const productRef = doc(db, "Items", "uyXLON8VSjmxLCopp7PC");  
+    const productRef = doc(db, "Items", "uyXLON8VSjmxLCopp7PC");
     getDoc(productRef).then((snapshot) => {
       if (snapshot.exists()) {
         setProduct({ id: snapshot.id, ...snapshot.data() });
-      } else {
-        console.warn("Produto não encontrado!");
       }
     });
   }, []);
@@ -24,8 +22,6 @@ const ItemDetail = () => {
   const handleIncrement = () => {
     if (product && localAmount < product.stock) {
       setLocalAmount(localAmount + 1);
-    } else {
-      alert(`A quantidade máxima em estoque é ${product?.stock}.`);
     }
   };
 
@@ -39,14 +35,13 @@ const ItemDetail = () => {
     if (product) {
       const itemToCart = {
         id: product.id,
-        name: product.products,
+        title: product.title,
         price: parseFloat(product.price),
-        image: product.photoId || "https://via.placeholder.com/150",
-        quantity: localAmount || 1,
+        imageId: product.imageId || "https://via.placeholder.com/150",
+        quantity: localAmount,
       };
 
-      addToCart(itemToCart);
-      alert(`${localAmount} unidade(s) de ${product.products} foram adicionadas ao carrinho.`);
+      addToCart(itemToCart, localAmount);
     }
   };
 
@@ -57,11 +52,7 @@ const ItemDetail = () => {
   return (
     <div className="product container">
       <div className="product-content">
-        <img
-          className="product-img"
-          src={product.photoId}
-          alt={product.products}
-        />
+        <img className="product-img" src={product.imageId} alt={product.title} />
         <div className="product-description">
           <h3>Categoria: {product.categoryId}</h3>
           <h1>{product.title}</h1>
@@ -73,20 +64,13 @@ const ItemDetail = () => {
             }).format(product.price)}
           </span>
           <h3 className="stock">Em estoque: {product.stock} peças</h3>
-
           <div className="buttons">
             <div className="quantidade counter_itens">
-              <button className="card_button" onClick={handleDecrement}>
-                -
-              </button>
+              <button className="card_button" onClick={handleDecrement}>-</button>
               <span id="value">{localAmount}</span>
-              <button className="card_button" onClick={handleIncrement}>
-                +
-              </button>
+              <button className="card_button" onClick={handleIncrement}>+</button>
             </div>
-            <button className="product_btn" onClick={handleBuy}>
-              Comprar
-            </button>
+            <button className="product_btn" onClick={handleBuy}>Adicionar ao carrinho</button>
           </div>
         </div>
       </div>

@@ -6,9 +6,7 @@ export const CartProvider = ({ children }) => {
 
   const addToCart = (product, quantity) => {
     setCart((prevCart) => {
-      const existingProductIndex = prevCart.findIndex(
-        (item) => item.id === product.id
-      );
+      const existingProductIndex = prevCart.findIndex((item) => item.id === product.id);
 
       if (existingProductIndex >= 0) {
         const updatedCart = [...prevCart];
@@ -18,7 +16,10 @@ export const CartProvider = ({ children }) => {
         return [
           ...prevCart,
           {
-            ...product,
+            id: product.id,
+            title: product.title,
+            price: parseFloat(product.price),
+            imageId: product.imageId,
             quantity: quantity || 1,
           },
         ];
@@ -27,14 +28,11 @@ export const CartProvider = ({ children }) => {
   };
 
   const increment = (product) => {
-    setCart((prevCart) => {
-      const updatedCart = prevCart.map((item) =>
-        item.id === product.id
-          ? { ...item, quantity: item.quantity + 1 }
-          : item
-      );
-      return updatedCart;
-    });
+    setCart((prevCart) =>
+      prevCart.map((item) =>
+        item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+      )
+    );
   };
 
   const decrement = (product) => {
@@ -48,8 +46,12 @@ export const CartProvider = ({ children }) => {
     });
   };
 
+  const clearCart = () => {
+    setCart([]);
+  };
+
   return (
-    <CartContext.Provider value={{ cart, addToCart, increment, decrement }}>
+    <CartContext.Provider value={{ cart, addToCart, increment, decrement, clearCart }}>
       {children}
     </CartContext.Provider>
   );
