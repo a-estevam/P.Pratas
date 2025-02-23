@@ -87,10 +87,10 @@ const CartView = () => {
           <h3>Total: R$ {totalPrice.toFixed(2)}</h3>
 
           {orderId ? (
-            <div>
+            <div >
               <h3>Pedido realizado com sucesso!</h3>
               <p>ID da compra: <strong>{orderId}</strong></p>
-              <Link to="/">Continuar comprando</Link>
+              <Link  to="/"><button className="button">Continuar comprando</button></Link>
             </div>
           ) : showCheckout ? (
             <CheckoutForm onConfirm={handleConfirmOrder} />
