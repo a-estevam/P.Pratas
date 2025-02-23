@@ -24,6 +24,7 @@ const ItemDaLista = () => {
         <div className="item_container" key={product.id}>
           <p className={`item_category ${product.categoryId}`}>{product.categoryId}</p>
           <img id="item_img" src={product.imageId} alt={product.title} />
+          <p className="item_stock">Preço: R${product.price}</p>
           <p className="item_stock">Em estoque: {product.stock} peças</p>
 
           <Link to={`/ItemDetail/${product.id}`}>
