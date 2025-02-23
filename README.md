@@ -20,6 +20,7 @@ P.Pratas foi desenvolvido com React.js para fornecer aos usuários uma maneira f
 
 
 ## 🖼️ Screenshots
+![Como usar simulador](https://github.com/a-estevam/P.Pratas/blob/main/public/comoUsar.gif)
 ![Imagem do simulador](https://github.com/a-estevam/P.Pratas/blob/main/public/mkp_laptop_github.png)
 
 ## 🎯 Melhorias Futuras
