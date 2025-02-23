@@ -41,11 +41,7 @@ const CartView = () => {
   };
 
   const handleDecrement = (item) => {
-    if (item.quantity === 1) {
-      removeItem(item.id); // Remove o item se a quantidade for 1
-    } else {
-      decrement(item); // Diminui a quantidade normalmente
-    }
+    decrement(item);
   };
 
   return (

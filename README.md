@@ -24,6 +24,7 @@ P.Pratas foi desenvolvido com React.js para fornecer aos usuários uma maneira f
 
 ## 🎯 Melhorias Futuras
 
+Cadastrar mais itens.
 Implementação de sistema de avaliações de produtos.
 Adição de mais filtros de busca (por preço, categoria, etc.).
 Integração com plataformas de pagamento para mais opções.
