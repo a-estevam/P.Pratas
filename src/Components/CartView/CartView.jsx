@@ -7,7 +7,7 @@ import "./CartView.css";
 import { db } from "../../main";
 
 const CartView = () => {
-  const { cart, increment, decrement, clearCart } = useContext(CartContext);
+  const { cart, increment, decrement, clearCart, removeItem } = useContext(CartContext);
   const [showCheckout, setShowCheckout] = useState(false);
   const [orderId, setOrderId] = useState(null);
 
@@ -37,6 +37,14 @@ const CartView = () => {
       clearCart();
     } catch (error) {
       console.error("Erro ao criar a ordem:", error);
+    }
+  };
+
+  const handleDecrement = (item) => {
+    if (item.quantity === 1) {
+      removeItem(item.id); // Remove o item se a quantidade for 1
+    } else {
+      decrement(item); // Diminui a quantidade normalmente
     }
   };
 
@@ -76,7 +84,7 @@ const CartView = () => {
                     <h4>Quantidade: {item.quantity || 1}</h4>
                   </div>
                   <div className="cartView_controls">
-                    <button onClick={() => decrement(item)}>-</button>
+                    <button onClick={() => handleDecrement(item)}>-</button>
                     <button onClick={() => increment(item)}>+</button>
                   </div>
                 </div>

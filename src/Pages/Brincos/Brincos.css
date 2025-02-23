@@ -64,6 +64,15 @@
     background-color: var(--tertiaryColor);
 }
 
+.itemList_filter{
+    display: flex ;
+    flex-direction: row;
+    overflow: hidden;
+    gap: 15px;
+}
+
+
+
 
 
 

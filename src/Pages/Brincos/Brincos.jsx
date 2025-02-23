@@ -36,7 +36,7 @@ const Brincos = () => {
       {products.length === 0 ? (
         <p>Carregando produtos...</p>
       ) : (
-        <ul >
+        <ul className="itemList_filter">
           {products.map(product => (
             <li  className="aneis_container"key={product.id}>
               <img id="item_img" src={product.imageId} alt={product.title} style={{ width: "100px" }} />

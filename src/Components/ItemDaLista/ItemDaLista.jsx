@@ -1,20 +1,21 @@
 import { useState, useEffect } from 'react';
 import './ItemDaLista.css';
 import { Link } from 'react-router-dom';
-import { doc, getDoc, getFirestore } from "firebase/firestore";
+import { collection, getDocs, getFirestore } from "firebase/firestore";
 
 const ItemDaLista = () => {
   const [products, setProducts] = useState([]);
   
   useEffect(() => {
     const db = getFirestore();
-    const itemsRef = doc(db, "Items", "uyXLON8VSjmxLCopp7PC");
+    const itemsCollectionRef = collection(db, "Items");
     
-    getDoc(itemsRef).then((snapshot) => {
-      if (snapshot.exists()) {
-        const productData = { id: snapshot.id, ...snapshot.data() };
-        setProducts([productData]); 
-      }
+    getDocs(itemsCollectionRef).then((querySnapshot) => {
+      const productsData = querySnapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data()
+      }));
+      setProducts(productsData); 
     });
   }, []);
 

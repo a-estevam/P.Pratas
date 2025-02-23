@@ -8,16 +8,17 @@ const ItemDetail = () => {
   const [product, setProduct] = useState(null);
   const [localAmount, setLocalAmount] = useState(1);
   const { addToCart } = useContext(CartContext);
+  const { id } = useParams();
 
   useEffect(() => {
     const db = getFirestore();
-    const productRef = doc(db, "Items", "uyXLON8VSjmxLCopp7PC");
+    const productRef = doc(db, "Items", id);
     getDoc(productRef).then((snapshot) => {
       if (snapshot.exists()) {
         setProduct({ id: snapshot.id, ...snapshot.data() });
       }
     });
-  }, []);
+  }, [id]);
 
   const handleIncrement = () => {
     if (product && localAmount < product.stock) {
