@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import "./ItemDetail.css";
 import CartContext from "../../Context/CartContext";
 import { doc, getDoc, getFirestore } from "firebase/firestore";
+import Swal from 'sweetalert2';
+
 
 const ItemDetail = () => {
   const [product, setProduct] = useState(null);
@@ -43,7 +45,10 @@ const ItemDetail = () => {
       };
 
       addToCart(itemToCart, localAmount);
+
+      Swal.fire("Produto adicionado no carrinho");
     }
+    
   };
 
   if (!product) {
