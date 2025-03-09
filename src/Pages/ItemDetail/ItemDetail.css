@@ -126,5 +126,20 @@
         background-color: var(--bgLightGrayColor);
     }
 
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product_btn{
+        width: 80vw;
+
+    }
+
+    .counter_itens{
+        width: 80vw;
+    }
+
    
 }
